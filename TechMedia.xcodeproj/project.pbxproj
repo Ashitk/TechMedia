@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		02A29C8F528291A99D0990DA /* Pods_TechMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBFBECDB128967F3A1DE1F1 /* Pods_TechMedia.framework */; };
+		6B1DDD221F1F3F80002E7149 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1DDD211F1F3F80002E7149 /* FeedVC.swift */; };
+		6B1DDD241F1F801B002E7149 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1DDD231F1F801B002E7149 /* CircleView.swift */; };
+		6B29417D1F2108B7008DD91D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B29417C1F2108B7008DD91D /* PostCell.swift */; };
+		6B5C21A81F26632C00457F9B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5C21A71F26632C00457F9B /* DataService.swift */; };
 		6B8BD94B1F177B4400DC2A41 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BD94A1F177B4400DC2A41 /* FancyView.swift */; };
 		6B8BD94E1F177DC900DC2A41 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BD94D1F177DC900DC2A41 /* Constants.swift */; };
 		6B8BD9501F17819D00DC2A41 /* RoundBTN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8BD94F1F17819D00DC2A41 /* RoundBTN.swift */; };
@@ -23,6 +27,10 @@
 
 /* Begin PBXFileReference section */
 		3B78D227D2694C9FC5351510 /* Pods-TechMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechMedia/Pods-TechMedia.release.xcconfig"; sourceTree = "<group>"; };
+		6B1DDD211F1F3F80002E7149 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		6B1DDD231F1F801B002E7149 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		6B29417C1F2108B7008DD91D /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		6B5C21A71F26632C00457F9B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		6B8BD94A1F177B4400DC2A41 /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		6B8BD94D1F177DC900DC2A41 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6B8BD94F1F17819D00DC2A41 /* RoundBTN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBTN.swift; sourceTree = "<group>"; };
@@ -52,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B5C21A41F26629100457F9B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6B5C21A71F26632C00457F9B /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		6B8BD94C1F177D5400DC2A41 /*  Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +97,7 @@
 		6B9D44981F166C1100075E7E /* TechMedia */ = {
 			isa = PBXGroup;
 			children = (
+				6B5C21A41F26629100457F9B /* Services */,
 				6B8BD94C1F177D5400DC2A41 /*  Util */,
 				6B9D44AD1F16754E00075E7E /* Model */,
 				6B9D44AF1F16756C00075E7E /* Controller */,
@@ -109,6 +126,8 @@
 				6B8BD94F1F17819D00DC2A41 /* RoundBTN.swift */,
 				6B8BD9511F1785D500DC2A41 /* FancyField.swift */,
 				6B8BD9531F178B8200DC2A41 /* FancyBTN.swift */,
+				6B1DDD231F1F801B002E7149 /* CircleView.swift */,
+				6B29417C1F2108B7008DD91D /* PostCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				6B9D449B1F166C1100075E7E /* SignInVC.swift */,
+				6B1DDD211F1F3F80002E7149 /* FeedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,13 +281,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1DDD241F1F801B002E7149 /* CircleView.swift in Sources */,
 				6B8BD9521F1785D500DC2A41 /* FancyField.swift in Sources */,
 				6B9D449C1F166C1100075E7E /* SignInVC.swift in Sources */,
 				6B9D449A1F166C1100075E7E /* AppDelegate.swift in Sources */,
 				6B8BD9541F178B8200DC2A41 /* FancyBTN.swift in Sources */,
+				6B5C21A81F26632C00457F9B /* DataService.swift in Sources */,
+				6B1DDD221F1F3F80002E7149 /* FeedVC.swift in Sources */,
 				6B8BD94B1F177B4400DC2A41 /* FancyView.swift in Sources */,
 				6B8BD94E1F177DC900DC2A41 /* Constants.swift in Sources */,
 				6B8BD9501F17819D00DC2A41 /* RoundBTN.swift in Sources */,
+				6B29417D1F2108B7008DD91D /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
